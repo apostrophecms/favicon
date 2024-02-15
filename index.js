@@ -18,7 +18,6 @@ module.exports = {
           return {};
         }
         const url = self.apos.attachment.url(attachment, { size: 'one-third' });
-        console.log(url);
         return {
           url
         };
