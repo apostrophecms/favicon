@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/apostrophecms/apostrophe/main/logo.svg" alt="ApostropheCMS logo" width="80" height="80">
 
-  <h1>Apostrophe PRO Module Template</h1>
+  <h1>Editable Favicons for ApostropheCMS</h1>
   <p>
     <a aria-label="Apostrophe logo" href="https://v3.docs.apostrophecms.org">
       <img src="https://img.shields.io/badge/MADE%20FOR%20Apostrophe%203-000000.svg?style=for-the-badge&logo=Apostrophe&labelColor=6516dd">
@@ -12,37 +12,34 @@
   </p>
 </div>
 
-This module template serves as a starting point for new official Apostrophe PRO modules. This is where you would describe what the purpose of the module is.
+This module allows users to edit the "favicon" (browser tab icon) of the site via the global settings of the site.
+As such, it pairs well with the Apostrophe palette and multisite modulees.
 
 ## Installation
 
 To install the module, use the command line to run this command in an Apostrophe project's root directory:
 
 ```
-npm install @apostrophecms/pro-module-template
+npm install @apostrophecms-pro/favicon
 ```
 
 ## Usage
 
-Configure the _______ module in the `app.js` file:
+Configure the `@apostrophecms-pro/favicon` module in the `app.js` file:
 
 ```javascript
 require('apostrophe')({
   shortName: 'my-project',
   modules: {
-    '@apostrophecms/pro-module-template': {}
+    '@apostrophecms-pro/favicon': {}
   }
 });
 ```
 
-### Additional usage sections
+You do not have to do anything else. You can access the global settings of the site
+via the "Gear" button in the upper right. Once there, select the "Favicon" tab and
+choose your preferred image. Note that a square portion of the image is automatically
+cropped if you do not use the cropping interface manually.
 
-### Pre-release checks
-
-- [ ] If the module does not include CSS, remove the Stylelint config file and dependency `npm remove --save-dev stylelint stylelint-config-apostrophe`
-- [ ] If the module does not include any Vue.js components, remove 
-  - [ ] set in `package.json`, `"eslint": "eslint .",`
-  - [ ] remove Vue.js packages `npm remove --save-dev eslint-plugin-vue vue-eslint-parser`
-- [ ] If the module does not contains any tests, remove mocha `npm remove --save-dev mocha`
-- [ ] If this file contains images, please use public static endpoint to load the images.
-- [ ] If any template includes a script with inline code, include the `nonce` attribute set like this: `<script nonce="{{ nonce }}">`.
+There are no special requirements for images uploaded for this purpose, however you may
+wish to use a PNG file in order to achieve transparency effects.
