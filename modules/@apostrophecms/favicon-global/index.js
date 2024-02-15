@@ -12,7 +12,7 @@ module.exports = {
             '@apostrophecms/image': {
               minSize: [ 192, 192 ],
               aspectRatio: [ 1, 1 ]
-            },
+            }
           },
           max: 1
         }
