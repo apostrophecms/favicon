@@ -1,5 +1,3 @@
-const util = require('util');
-
 module.exports = {
   improve: '@apostrophecms/global',
   fields: {
