@@ -7,7 +7,7 @@ module.exports = {
     modules: getBundleModuleNames()
   },
   init(self) {
-    self.apos.template.append('head', '@apostrophecms-pro/favicon:head');
+    self.apos.template.append('head', '@apostrophecms/favicon:head');
   },
   components(self) {
     return {

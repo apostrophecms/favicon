@@ -20,18 +20,18 @@ As such, it pairs well with the Apostrophe palette and multisite modulees.
 To install the module, use the command line to run this command in an Apostrophe project's root directory:
 
 ```
-npm install @apostrophecms-pro/favicon
+npm install @apostrophecms/favicon
 ```
 
 ## Usage
 
-Configure the `@apostrophecms-pro/favicon` module in the `app.js` file:
+Configure the `@apostrophecms/favicon` module in the `app.js` file:
 
 ```javascript
 require('apostrophe')({
   shortName: 'my-project',
   modules: {
-    '@apostrophecms-pro/favicon': {}
+    '@apostrophecms/favicon': {}
   }
 });
 ```
@@ -43,3 +43,6 @@ cropped if you do not use the cropping interface manually.
 
 There are no special requirements for images uploaded for this purpose, however you may
 wish to use a PNG file in order to achieve transparency effects.
+
+> Browsers vary in terms of how quickly you will see the new favicon image, but a
+> page refresh usually suffices.
