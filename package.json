@@ -1,7 +1,7 @@
 {
-  "name": "@apostrophecms/pro-module-template",
+  "name": "@apostrophecms/favicon",
   "version": "1.0.0",
-  "description": "A template for creating an ApostropheCMS 3 PRO module.",
+  "description": "Edit the favicon (the icon in the browser tab) within ApostropheCMS",
   "main": "index.js",
   "scripts": {
     "eslint": "eslint --ext .js,.vue .",
@@ -10,11 +10,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/apostrophecms/pro-module-template.git"
+    "url": "git+https://github.com/apostrophecms/favicon.git"
   },
-  "homepage": "https://github.com/apostrophecms/pro-module-template#readme",
+  "homepage": "https://github.com/apostrophecms/favicon#readme",
   "author": "Apostrophe Technologies",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "devDependencies": {
     "apostrophe": "github:apostrophecms/apostrophe",
     "eslint": "^8.44.0",
