@@ -19,7 +19,7 @@ This module template serves as a starting point for new official Apostrophe PRO 
 To install the module, use the command line to run this command in an Apostrophe project's root directory:
 
 ```
-npm install @apostrophecms/pro-module-template
+npm install @apostrophecms/favicon
 ```
 
 ## Usage
@@ -30,7 +30,7 @@ Configure the _______ module in the `app.js` file:
 require('apostrophe')({
   shortName: 'my-project',
   modules: {
-    '@apostrophecms/pro-module-template': {}
+    '@apostrophecms/favicon': {}
   }
 });
 ```

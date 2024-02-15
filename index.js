@@ -5,6 +5,27 @@ module.exports = {
   bundle: {
     directory: 'modules',
     modules: getBundleModuleNames()
+  },
+  init(self) {
+    self.apos.template.append('head', '@apostrophecms-pro/favicon:head');
+  },
+  components(self) {
+    return {
+      async head(req, data) {
+        const image = req.data.global.favicon && apos.image.first(req.data.global.favicon);
+        if (!image) {
+          return {
+            available: false
+          };
+        }
+        const baseUrl = apos.attachment.url(baseUrl, { size: 'one-third' });
+        return {
+          available: true,
+          faviconUrl: baseUrl,
+          appleUrl: baseUrl
+        };
+      }
+    };
   }
 };
 
