@@ -14,7 +14,6 @@ module.exports = {
       head(req) {
         const doc = req.data.global;
         const attachment = self.apos.image.first(doc.favicon);
-        console.log(attachment);
         if (!attachment) {
           return {};
         }
