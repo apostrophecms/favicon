@@ -2,6 +2,11 @@ const fs = require('fs');
 const path = require('path');
 
 module.exports = {
+  i18n: {
+    aposFavicon: {
+      browser: true
+    }
+  },
   bundle: {
     directory: 'modules',
     modules: getBundleModuleNames()
