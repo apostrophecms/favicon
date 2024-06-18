@@ -3,7 +3,7 @@ module.exports = {
   fields: {
     add: {
       favicon: {
-        label: 'Favicon (browser tab icon)',
+        label: 'aposFavicon:faviconFieldLabel',
         type: 'area',
         options: {
           widgets: {
@@ -18,7 +18,7 @@ module.exports = {
     },
     group: {
       favicon: {
-        label: 'Favicon',
+        label: 'aposFavicon:faviconGroupLabel',
         fields: [ 'favicon' ]
       }
     }
