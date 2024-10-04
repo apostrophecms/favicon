@@ -13,7 +13,7 @@
 </div>
 
 This module allows users to edit the "favicon" (browser tab icon) of the site via the global settings of the site.
-As such, it pairs well with the Apostrophe palette and multisite modulees.
+As such, it pairs well with the Apostrophe palette and multisite modules.
 
 ## Installation
 
