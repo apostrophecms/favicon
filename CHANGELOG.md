@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.2 (2024-10-04)
+
+* Fixes typo in README, no code changes.
+
 ## 1.1.1 (2024-10-03)
 
 * Adds translation strings.
