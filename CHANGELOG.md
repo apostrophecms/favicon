@@ -1,5 +1,9 @@
 # Changelog
 
+## UNRELEASED
+
+* Inject nodes instead async Nunjucks component to support external frontends.
+
 ## 1.1.2 (2024-10-04)
 
 * Fixes typo in README, no code changes.
