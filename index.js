@@ -30,7 +30,7 @@ module.exports = {
           // Android
           {
             name: 'link',
-            atts: {
+            attrs: {
               rel: 'icon',
               href
             }
@@ -38,7 +38,7 @@ module.exports = {
           // iOS
           {
             name: 'link',
-            atts: {
+            attrs: {
               rel: 'apple-touch-icon',
               href
             }
