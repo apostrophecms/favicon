@@ -15,6 +15,9 @@
 This module allows users to edit the "favicon" (browser tab icon) of the site via the global settings of the site.
 As such, it pairs well with the Apostrophe palette and multisite modules.
 
+## Compatibility
+This version requires the latest ApostropheCMS. When adding this module to an existing project, run `npm update` to ensure all ApostropheCMS modules are up-to-date.
+
 ## Installation
 
 To install the module, use the command line to run this command in an Apostrophe project's root directory:
