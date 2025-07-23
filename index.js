@@ -12,20 +12,38 @@ module.exports = {
     modules: getBundleModuleNames()
   },
   init(self) {
-    self.apos.template.append('head', '@apostrophecms/favicon:head');
+    self.appendNodes('head', 'head');
   },
-  components(self) {
+  methods(self) {
     return {
       head(req) {
         const doc = req.data.global;
         const attachment = self.apos.image.first(doc.favicon);
         if (!attachment) {
-          return {};
+          return [];
         }
-        const url = self.apos.attachment.url(attachment, { size: 'one-third' });
-        return {
-          url
-        };
+        const href = self.apos.attachment.url(attachment, { size: 'one-third' });
+        if (!href) {
+          return [];
+        }
+        return [
+          // Android
+          {
+            name: 'link',
+            attrs: {
+              rel: 'icon',
+              href
+            }
+          },
+          // iOS
+          {
+            name: 'link',
+            attrs: {
+              rel: 'apple-touch-icon',
+              href
+            }
+          }
+        ];
       }
     };
   }
