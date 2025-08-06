@@ -1,8 +1,8 @@
 # Changelog
 
-## UNRELEASED
+## 1.1.3 (2025-08-06)
 
-* Inject nodes instead async Nunjucks component to support external frontends.
+* Inject nodes rather than async Nunjucks components, to support external frontends.
 
 ## 1.1.2 (2024-10-04)
 
